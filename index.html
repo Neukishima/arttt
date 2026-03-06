@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Question For You ❤️</title>
+<link rel="stylesheet" href="date.css">
+</head>
+
+<body>
+    <audio id="bgMusic" loop>
+<source src="SONG/Melanie Martinez - LIGHT SHOWER (Official Audio).mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playMusic()" class="musicBtn">Play Our Song 🎶</button>
+
+<div class="container">
+
+<h1>Hi ❤️</h1>
+
+<p>
+I made this little website for you poooo
+</p>
+
+<h2>Will you go on a date with me tomorrow?</h2>
+
+<div class="buttons">
+<button onclick="goToDate()">YES 💖</button>
+<button onclick="showGif()">No 😢</button>
+</div>
+
+<p id="message"></p>
+
+<div id="noResponse" style="display:none;">
+    <p>Are you sure about that? 🥺</p>
+    <img src="Image/200w (1).gif" class="gif">
+</div>
+
+</div>
+
+<script>
+
+function sayYes(){
+document.getElementById("message").innerHTML =
+"Yay! I’m excited for tomorrow ❤️";
+}
+
+function moveButton(){
+const button = document.getElementById("noBtn");
+
+button.style.position = "absolute";
+button.style.top = Math.random()*80 + "%";
+button.style.left = Math.random()*80 + "%";
+}
+
+function showGif(){
+document.getElementById("noResponse").style.display = "block";
+}
+
+</script>
+
+<script src="DATE.JS"></script>
+
+</body>
+</html>
